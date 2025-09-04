@@ -1,0 +1,24 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.env-info-display {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  font-size: 12px;
+  background-color: white;
+  opacity: 30%;
+  z-index: 2000;
+}
+
+button {
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}

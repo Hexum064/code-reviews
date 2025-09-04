@@ -1,0 +1,144 @@
+.permissions-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 90%;
+
+    // background-color: aquamarine;
+}
+
+.permissions-header {
+    display: flex;
+    width: 100%;
+ 
+}
+
+.permissions-grid-refresh-button {
+
+ filter: var(--tcw-gray-filter);
+    &:hover:enabled {
+        filter: var(--near-black-filter);
+        
+    }   
+    &:disabled {
+        cursor: default;
+        filter: var(--dark-gray-filter);
+        
+    } 
+}
+
+.permissions-grid-refresh-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.permissions-grid-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    // background-color: rgb(196, 137, 116);
+}
+
+.permissions-grid-header {
+       background-color: var(--tcw-gray-color);
+}
+
+.permissions-grid-rows-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    // background-color: rgb(214, 195, 188);
+}
+
+.permissions-grid-row {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 35px;
+
+    
+    padding-left: 6px;
+
+        align-items: center;
+
+}
+
+.permission-grid-row-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--dark-gray-color);
+    &:hover {
+        background-color: var(--highlight-blue-color);
+    }    
+}
+
+.permission-grid-row-group-name {
+    font-weight: bold;
+    padding-left: 6px;
+}
+
+.permission-grid-row-status {
+    display: flex;
+    flex-grow: 1; 
+    color: transparent; /* make the text invisible */
+    user-select: none; /* prevent selection of the text */
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    &[aria-hidden="false"] {
+            color: rgb(179, 101, 101); /* make the text invisible */
+    
+    }
+}
+
+.permission-grid-row-expand-button {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin-right: 6px;
+}
+
+.permission-grid-row-expand-icon {
+    filter: var(--dark-gray-filter);
+    &:hover {
+        filter: var(--near-black-filter);
+    }
+}
+
+
+.permission-grid-row-header {
+    display: flex;
+    flex-direction: row;
+       
+    
+}
+
+.permissions-list-container {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-bottom: 4px;
+    width: 400px;
+    &[aria-expanded="false"] {
+        display: none;
+    }
+}
+
+
+.permission-container {
+    display: flex;
+    flex-direction: row;
+ background-color: var(--white);
+ padding: 4px;
+}
+
+.permission-title {
+    display: flex;
+    margin-right: auto;
+}

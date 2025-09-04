@@ -1,0 +1,106 @@
+.alerts-container {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 10px;
+    left: 24px;
+    display: flex;
+    flex-direction: row;
+    min-height: 0px;
+    max-height: 216px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.alerts-left-container,
+.alerts-right-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 400px;
+
+    min-height: 0;
+    padding-bottom: 20px;
+    height: fit-content;
+    gap: 16px;
+}
+
+.alert-card-container {
+    display: inline-flex;
+    flex-direction: column;
+
+    border-radius: 4px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+    margin-left: 8px;
+    margin-right: 8px;
+
+    background-color: rgb(48, 52, 58);
+    &[aria-level='0'] {
+        color: rgb(102, 135, 138);
+    }
+
+    &[aria-level='1'] {
+        color: rgb(81, 184, 90);
+    }
+
+    &[aria-level='4'] {
+        color: rgb(245, 151, 107);
+    }
+
+    &[aria-level='3'] {
+        color: rgb(190, 189, 102);
+    }
+
+    &[aria-level='2'] {
+        color: rgb(245, 107, 107);
+    }
+}
+
+.alert-card-header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2px;
+
+    white-space: pre-wrap;
+    height: auto;
+}
+
+.alert-card-title {
+    min-height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 16px;
+    padding-bottom: 4px;
+    margin-right: auto;
+    word-break: normal;
+    overflow-wrap: break-word;
+    height: fit-content;
+}
+
+.alert-card-close-button {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    line-height: 20px;
+    margin-right: 2px;
+    border-radius: 3px;
+    background-color: darkgray;
+
+    opacity: 50%;
+    &:hover {
+        opacity: 100%;
+    }
+}
+
+.alert-card-content {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.alert-card-timestamp {
+    text-align: right;
+    font-size: 11px;
+    padding-right: 4px;
+    color: dimgray;
+}
